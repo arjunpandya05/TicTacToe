@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Name: Arjun Pandya, Date: 11/17/2026, Lab 4 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Two Player Tic Tac Toe</h1>
+    <p class="byline">Arjun Pandya</p>
+
+    <div id="login">
+      <input id="nameInput" type="text" maxlength="30" placeholder="First Name" aria-label="First Name">
+      <input id="passwordInput" type="password" placeholder="Password" aria-label="Password">
+      <button id="joinBtn" type="button">Join Game</button>
+    </div>
+
+    <div id="role" aria-live="polite">Enter your name and password to join.</div>
+    <div id="status" aria-live="polite">Connecting to server...</div>
+
+    <canvas id="board" width="600" height="600" aria-label="Tic-Tac-Toe game board"></canvas>
+
+    <button id="resetBtn" type="button">Reset Game</button>
+    <p class="hint">Instructions: Open this page in two browser windows to play the game. If you have more than 2 people on the site the rest will be spectators. </p>
+  </main>
+  <script src="client.js"></script>
+</body>
+</html>
